@@ -1,0 +1,30 @@
+#!/usr/bin/bash
+
+# A. Emre Eser - 2023
+# Contact me & report bugs: eseahm<dot>21<at>gmail<dot>com
+
+# Will develop this further so be patient and go easy on me : )
+
+if [ -z "$1"  ]; then
+
+    echo "No options provided, use --help to see available options";
+
+elif [ "$1" == "--help" ]; then
+
+    echo "options:";
+    echo "-i, --in : sets the alarm to n minutes from now, must specify n after the option";
+    echo "-a, --at : sets the alarm to a specific time";
+    echo "time format: with a '.' in between eg 7.30 ";
+    echo "Cannot have both -a/--at and -i/--in at the same time";
+
+elif { [ "$1" == "--in" ] || [ "$1" == "-i" ]; } && [ -n "$2" ]; then
+
+    at now + $2 minutes <<< "./alarm";
+    echo "alarm set to $2 minutes from $( date +"%H.%M" )";
+
+else
+
+    at $1 <<< "./alarm";
+    echo "alarm set to $1";
+
+fi
