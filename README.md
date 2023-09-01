@@ -11,6 +11,8 @@ Feel free to contact me with suggestions or issues
   3. run "source ~/.profile"
   4. test with "clarm --help"
 
+default installation folder is: /usr/local/bin/clarm_cli/
+
 - manual:
   1. Install the dependencies via apt
     - alsa-tools
@@ -22,9 +24,6 @@ Feel free to contact me with suggestions or issues
 ## Changing the alarm sound
 Any sound file with the name "alarm.wav" that replaces the stock alarm sound in the same folder should work with the script
 
-### Development Path
-1. installer script
-2. adding more options
 
 ### Author:
 A. Emre Eser
