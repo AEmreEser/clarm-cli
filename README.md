@@ -6,15 +6,18 @@ Feel free to contact me with suggestions or issues
 
 ## Installation:
 1. Install the dependencies via apt
-  - at
+  - alsa-tools
   - mplayer
-  - amixer
+  - at
 3. copy the files to a folder anywhere in your computer
 4. add the folder to your path ( [If you don't know how to do that](https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix) )
 
 ## Changing the alarm sound
 Any sound file with the name "alarm.wav" that replaces the stock alarm sound in the same folder should work with the script
 
+### Development Path
+1. installer script
+2. adding more options
 
 ### Author:
 A. Emre Eser
