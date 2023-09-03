@@ -1,4 +1,4 @@
 #!/usr/bin/bash
-amixer sset Master playback unmute
-amixer sset Master playback 25000
-mplayer ./alarm.wav
+amixer sset Master playback unmute;
+amixer sset Master playback 25000;
+mplayer ./alarm.wav;
